@@ -18,9 +18,12 @@ struct ContentView: View {
         VStack {
             TextField("Search Articles", text: .constant(""))
                 .padding()
-                .background(colorScheme == .light ? Color.init(white: 0.9) : Color.init(white: 0.1) )
-                .cornerRadius(10)
-                .padding()
+                .background(Image(systemName: "magnifyingglass.circle.fill")
+                    .padding(), alignment: .leading)
+                    .background(colorScheme == .light ? Color.init(white: 0.9) : Color.init(white: 0.1) )
+                    .cornerRadius(10)
+                    .padding()
+            
             Picker("Category", selection: .constant(0)) {
                 Text("Food")
                 Text("Museums")
@@ -38,13 +41,13 @@ struct ContentView: View {
         .navigationBarItems(trailing:
             HStack.init(spacing: 16) {
                 Button(action: {}) {
-//                        Text("Edit")
+                    //                        Text("Edit")
                     Image(systemName: "pencil.circle")
                 }
                 Button(action: {}) {
-                        Image(systemName: "plus")
+                    Image(systemName: "plus")
                 }
-            })
+        })
     }
 }
 
