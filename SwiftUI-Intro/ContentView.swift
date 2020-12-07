@@ -15,14 +15,19 @@ struct ContentView: View {
     @Environment(\.colorScheme) var colorScheme
     var body: some View {
         
+        
         VStack {
-            TextField("Search Articles", text: .constant(""))
+            HStack {
+                Image(systemName: "magnifyingglass.circle.fill")
                 .padding()
-                .background(Image(systemName: "magnifyingglass.circle.fill")
-                    .padding(), alignment: .leading)
+                
+                TextField("Search Articles", text: .constant(""))
+                    .padding()
                     .background(colorScheme == .light ? Color.init(white: 0.9) : Color.init(white: 0.1) )
                     .cornerRadius(10)
                     .padding()
+                
+            }
             
             Picker("Category", selection: .constant(0)) {
                 Text("Food")
