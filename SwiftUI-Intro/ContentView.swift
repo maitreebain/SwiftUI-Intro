@@ -15,11 +15,10 @@ struct ContentView: View {
     @Environment(\.colorScheme) var colorScheme
     var body: some View {
         
-        
         VStack {
             HStack {
                 Image(systemName: "magnifyingglass.circle.fill")
-                    .padding()
+                    .padding(.leading, 8)
                 
                 TextField("Search Articles", text: .constant(""))
                     .padding()
@@ -38,16 +37,21 @@ struct ContentView: View {
             .padding()
             
             List {
-                Section(header: Text("Section 1")) {
-                    RowView()
-                    RowView()
-                    RowView()
-                }
-                Section(header: Text("Section 2")) {
-                    RowView()
-                    RowView()
+                
+                ForEach(1...100, id: \.self) { index in
                     RowView()
                 }
+                
+//                Section(header: Text("Section 1").italic()) {
+//                    RowView()
+//                    RowView()
+//                    RowView()
+//                }
+//                Section(header: Text("Section 2")) {
+//                    RowView()
+//                    RowView()
+//                    RowView()
+//                }
             }
         }
         .navigationBarTitle("Explore", displayMode: .inline)
