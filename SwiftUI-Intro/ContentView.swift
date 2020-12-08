@@ -19,7 +19,7 @@ struct ContentView: View {
         VStack {
             HStack {
                 Image(systemName: "magnifyingglass.circle.fill")
-                .padding()
+                    .padding()
                 
                 TextField("Search Articles", text: .constant(""))
                     .padding()
@@ -36,10 +36,18 @@ struct ContentView: View {
             }
             .pickerStyle(SegmentedPickerStyle())
             .padding()
+            
             List {
-                RowView()
-                RowView()
-                RowView()
+                Section(header: Text("Section 1")) {
+                    RowView()
+                    RowView()
+                    RowView()
+                }
+                Section(header: Text("Section 2")) {
+                    RowView()
+                    RowView()
+                    RowView()
+                }
             }
         }
         .navigationBarTitle("Explore", displayMode: .inline)
@@ -55,6 +63,8 @@ struct ContentView: View {
         })
     }
 }
+
+
 
 struct RowView: View {
     var body: some View {
