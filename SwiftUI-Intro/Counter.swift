@@ -29,6 +29,12 @@ class CounterViewModel: ObservableObject {
     }
 }
 
+//struct NavigationView: View {
+//    var body: some View {
+//
+//    }
+//}
+
 struct CounterView: View {
     //    @State var count = 0
     @State var isModalPresented = false
@@ -69,12 +75,32 @@ struct CounterView: View {
         }
         .sheet(isPresented: self.$isModalPresented) {
             
-            List {
-                ForEach(0...self.viewModel.count, id: \.self) { index in
-                    Text("\(index)")
-                }
+            NavigationView {
+                ShowCountView(viewModel: self.viewModel)
             }
         }
+        
+    }
+}
+
+struct ShowCountView: View {
+    
+    @ObservedObject var viewModel: CounterViewModel
+    @Environment(\.presentationMode) private var presentationMode
+    
+    var body: some View {
+        List {
+            ForEach(0...viewModel.count, id: \.self) { index in
+                Text("\(index)")
+            }
+        }.navigationBarItems(trailing: HStack {
+            Button(action: {
+                
+                self.presentationMode.wrappedValue.dismiss()
+            }) {
+                Text("Done")
+            }
+        })
     }
 }
 
