@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80AE047A258B18D600D9870A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80AE0479258B18D600D9870A /* Main.storyboard */; };
 		80C5DECE2579447500B3F097 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C5DECD2579447500B3F097 /* AppDelegate.swift */; };
 		80C5DED02579447500B3F097 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C5DECF2579447500B3F097 /* SceneDelegate.swift */; };
 		80C5DED22579447500B3F097 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C5DED12579447500B3F097 /* ContentView.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		80AE0479258B18D600D9870A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		80C5DECA2579447500B3F097 /* SwiftUI-Intro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Intro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C5DECD2579447500B3F097 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80C5DECF2579447500B3F097 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			children = (
 				80C5DECD2579447500B3F097 /* AppDelegate.swift */,
 				80C5DECF2579447500B3F097 /* SceneDelegate.swift */,
+				80AE0479258B18D600D9870A /* Main.storyboard */,
 				80C7C330257FEC560015DEC6 /* Counter.swift */,
 				80C5DED12579447500B3F097 /* ContentView.swift */,
 				80C5DED32579447600B3F097 /* Assets.xcassets */,
@@ -194,6 +197,7 @@
 				80C5DEDA2579447600B3F097 /* LaunchScreen.storyboard in Resources */,
 				80C5DED72579447600B3F097 /* Preview Assets.xcassets in Resources */,
 				80C5DED42579447600B3F097 /* Assets.xcassets in Resources */,
+				80AE047A258B18D600D9870A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

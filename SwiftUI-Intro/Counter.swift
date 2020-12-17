@@ -29,12 +29,6 @@ class CounterViewModel: ObservableObject {
     }
 }
 
-//struct NavigationView: View {
-//    var body: some View {
-//
-//    }
-//}
-
 struct CounterView: View {
     //    @State var count = 0
     @State var isModalPresented = false
