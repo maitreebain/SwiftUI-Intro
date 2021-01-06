@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80604BEE25A6195A00D7254B /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80604BED25A6195A00D7254B /* Animations.swift */; };
+		80604BF025A6210800D7254B /* MoreAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80604BEF25A6210800D7254B /* MoreAnimations.swift */; };
 		80C5DECE2579447500B3F097 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C5DECD2579447500B3F097 /* AppDelegate.swift */; };
 		80C5DED02579447500B3F097 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C5DECF2579447500B3F097 /* SceneDelegate.swift */; };
 		80C5DED22579447500B3F097 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C5DED12579447500B3F097 /* ContentView.swift */; };
@@ -28,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		80604BED25A6195A00D7254B /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
+		80604BEF25A6210800D7254B /* MoreAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreAnimations.swift; sourceTree = "<group>"; };
 		80C5DECA2579447500B3F097 /* SwiftUI-Intro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Intro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C5DECD2579447500B3F097 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80C5DECF2579447500B3F097 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +88,8 @@
 				80C5DECD2579447500B3F097 /* AppDelegate.swift */,
 				80C5DECF2579447500B3F097 /* SceneDelegate.swift */,
 				80C7C330257FEC560015DEC6 /* Counter.swift */,
+				80604BED25A6195A00D7254B /* Animations.swift */,
+				80604BEF25A6210800D7254B /* MoreAnimations.swift */,
 				80C5DED12579447500B3F097 /* ContentView.swift */,
 				80C5DED32579447600B3F097 /* Assets.xcassets */,
 				80C5DED82579447600B3F097 /* LaunchScreen.storyboard */,
@@ -212,9 +218,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				80C7C331257FEC560015DEC6 /* Counter.swift in Sources */,
+				80604BEE25A6195A00D7254B /* Animations.swift in Sources */,
 				80C5DECE2579447500B3F097 /* AppDelegate.swift in Sources */,
 				80C5DED02579447500B3F097 /* SceneDelegate.swift in Sources */,
 				80C5DED22579447500B3F097 /* ContentView.swift in Sources */,
+				80604BF025A6210800D7254B /* MoreAnimations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

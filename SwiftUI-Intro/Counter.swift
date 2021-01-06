@@ -88,7 +88,10 @@ struct CounterView: View {
 //            Text("\(fact)")
 //            }
             self.viewModel.fact.map {
-                Text($0).transition(AnyTransition.opacity.combined(with: .slide))
+                Text($0).transition(
+                    AnyTransition.opacity
+                        .combined(with: .offset(x: 0, y: 20))
+                )
             }
         }
         .sheet(isPresented: self.$isModalPresented) {
